@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Games Mania</title>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--INICIO SITE-->
+    <section class="secao-apresentação">
+        <div class="telefone container">
+        <a href=""><img class="icon-telefone" src="img/telefone 1.png" alt="telefone" height="22" width="22"> (43) 3305-3399
+        </a>
+    </div>
+        <div class="whats container">
+        <a href="https://web.whatsapp.com/"><img class="icon-whats" src="img/whats.png" alt="whats" height="24" width="24"> (43) 99665-9988
+        </a>
+    </div>
+        <div class="bem-vindo container">
+        <a href="">Sejam Bem Vindos à Games Mania!</a>
+    </div>
+        <div class="redes container">
+            <a href="https://www.facebook.com/rafkastelic/"><img src="img/face.png" alt="icone face"></a>
+            <a href="https://www.instagram.com/raffkastelic/"><img src="img/instagram.png" alt="icone instagram"></a>
+            <a href=""><img src="img/twitter.png" alt="icone Twitter"></a>
+    </div>          
+    </section>
+<!-- FIM INICIO SITE-->
+
+<!-- INICIO LOGO E BARRA DE BUSCA -->
+    <section class="secao-logo">
+        <div class="logo container">
+        <a href=""><img class="logo-G" src="img/Logo 1.png" alt="imagem-logo" height="110" width="157"></a>
+        <div class="search">
+            <input type="texto" class="barra-busca" id="pesquisar" placeholder="Pesquisar" required>
+            <a href="#" class="search-button">
+                <img src="img/lupa.svg" alt="Lupa" height="30" width="30">
+            </a>
+            </div>
+        <div class="atendimento container">
+            <a href="#" class="atendimento">
+               <img src="img/atendimento.png" alt="atendimento" height="30" width="30"> Atendimento
+        </a>       
+        </div> 
+        <div class="login container">
+            <a href="#" class="login">
+                <img src="img/login.png" alt="login" height="30" width="30"> Entrar
+            </a>
+        </div> 
+        <div class="carrinho container">
+            <a href="#" class="carrinho">
+                <img src="img/carrinho.png" alt="carrinho" height="30" width="30">
+            </a>
+        </div>
+    </section>
+<!-- FIM LOGO E BARRA DE BUSCA-->  
+
+<!-- INICIO MENU SUPERIOR -->
+    <header>
+        <div class="container-grid posicionamento-header">
+            <a href=""><img class="sanduba" src="img/bars.svg" alt="menu sanduiche" height="20" width="30"></a> 
+            <nav id="menu" class="menu">
+                <a href="">Departamento</a>
+                <a href="">Lançamentos</a>
+                <a href="">PC GAMER</a>
+                <a href="">Monitores</a>
+                <a href="">Notícias</a>
+                <a href="">Monte seu PC</a>
+                <a href="">Jogos PS4/PS5</a>
+                <a href="">Promoções</a>
+            </nav>
+            <a href="#" onclick="mostrarMenu()"><img class="barras" src="img/bars.svg" alt="Menu de Barras"></a>
+        </div>
+    </header>
+<!-- FIM DO MENU SUPERIOR -->
+
+<!-- INÍCIO DO CAROUSEL --> 
+    <div class="banner">
+        <div id="carousel container" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+            </ol>
+<!-- FIM DOS INDICADORES --> 
+
+<!-- INICIO DOS SLIDES -->
+            <div class="carousel-inner container">
+                <div class="item active">
+                    <img src="img/ban1.jpg" alt="Banner1">
+                </div>
+                <div class="item">
+                    <img src="img/ban2.jpg" alt="Banner2">
+                </div>
+                <div class="item">
+                    <img src="img/ban3.jpg" alt="Banner3">
+                </div>
+                <div class="item">
+                    <img src="img/ban4.jpg" alt="Banner4">
+                </div>
+                <div class="item">
+                    <img src="img/ban5.jpg" alt="Banner5">
+                </div>
+        </div>
+<!-- FIM DOS SLIDES -->
+
+<!-- CONTROLADORES-->
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a href="#carousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+<!-- FIM DOS CONTROLADORES -->
+    </div>
+    <hr>
+<!-- INICIO DA GALERIA -->
+    <div class="galeria container">
+        <div class="box-galeria container">
+            <div class="single-box container"><img class="play" src="img/playstation-5-ps5.png" alt="PS5"></div>
+        </div>
+        <div class="box-galeria container">
+            <div class="single-box container"><img class="note" src="img/notegamer.png" alt="PS5" ></div>
+        </div>
+        <div class="box-galeria container">
+            <div class="single-box container"><img class="xbox" src="img/xbox.png" alt="PS5"></div>
+        </div>        
+    </div>           
+    <hr>
+<!-- FIM DA GALERIA -->  
+
+<!-- INICIO GALERIA DE VENDAS-->
+
+
+<!-- FIM GALERIA DE VENDAS-->
+
+
+
+    <script>
+        let menu = document.getElementById("menu");
+
+        function mostrarMenu() {
+            if(menu.style.display != "flex"){
+                menu.style.display = "flex"
+            }else{
+                menu.style.display = "none"
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #332E2E;
+}
+
+.secao-apresentação{
+    background-image: url(../img/fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.secao-apresentação a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    font-size: 16px;                
+}
+
+.telefone{
+    position: relative;
+    left: 0,9%;
+    height: px; 
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.whats{
+    position: relative;
+    right: 14%;
+    height: px;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     
+}
+
+.bem-vindo{
+    position: relative;
+    height: px; 
+    right: 15%;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.redes{
+    position: relative;
+    align-items: center;
+}
+
+.secao-logo{
+    background-image: url(../img/Rectangle\ 1.png);
+    background-position: center;
+    height: 140px;
+    background-repeat: none;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    align-items: center;    
+}
+
+.logo{
+    ;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    position: relative;
+    top: 5%;
+    left: 2%;
+    background: whitesmoke;
+    height: 40px;
+    padding: 3px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-busca{
+    width: 400px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #332E2E;
+    font-size: 20px;
+    line-height: 40px;
+    font-size: "Roboto";
+}
+
+.search-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: #332E2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.atendimento{
+    position: relative;
+    top: 5%;
+    left: 10%;
+    background: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login{
+    position: relative;
+    top: 5%;
+    left: 7%;
+    background: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carrinho{
+    position: relative;
+    top: 5%;
+    left: 3%;
+    background: none;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;    
+}
+
+.container-grid{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: #6A6868; 
+    height: 45px;
+}
+.menu{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.barras{
+    width: 30px;
+    display: none;
+}
+
+.posicionamento-header{
+    position: relative;
+}
+
+.secao-banner{
+    width: 67%;
+    position: relative;
+    background-color: #332E2E;
+    display: flex;
+    justify-content: space-around;
+    align-items:    
+}
+
+.loja{
+    width: 100px;
+    border-color: white;
+}
+
+.galeria{
+    width: 300x;
+    height: 200px;
+    border-color: #6A6868;
+    box-shadow: #6A6868;
+    position: relative;
+    display: flex;   
+}
+
+.box-galeria{
+    display: flex;
+    padding: 1px;    
+}
+
+.box-galeria:hover .single-box img{
+    transform: scale(1.1);
+}
+
+.single-box img{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: #6A6868;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 15px #6A6868;
+    display: inline-block;
+}
+       
+.secao-jogos{
+    background-color: black;
+}
+
+.jogos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jogos img{
+    width: 150px;
+}
+.secao-sobre{
+    background-image: url(../img/Fundo.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.texto-sobre{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+        width: 90%;
+    }
+    .menu{
+        width: 460px;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    .icon-telefone{
+        width: 30px;
+        position: absolute;
+        top: 0;
+        left: -190%;
+    }
+    .icon-telefone a{
+        position: absolute;
+        right: 20%;
+    }
+    .secao-apresentação{
+        width: 200px;
+        height: 40px;
+        position: relative;
+        justify-content: center;
+        align-items: center;        
+    }
+    .secao-apresentação a{
+        font-size: 10px;
+        justify-content: center;
+    }
+    .logo{
+        width: 460px;
+    }
+    .barra-busca{
+        width: 460px;
+    }
+    .secao-banner{
+        width: 460px;
+    }
+    .secao-apresentação{
+        width: 460px;
+    }
+    
+    .galeria{
+        width: 460px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        color:white;
+    }
+    .barras{
+        display: inline-block;
+    }
+    .sanduba{
+        display: none;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 10x;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        left: 22%;
+        background-color: #6A6868;
+    }
+    .menu a{
+        text-align: center;
+        padding: 16px;
+    }
+    .posicionamento-header{
+        position: relative;
+    }
+    .secao-apresentação{
+        display: none;
+        width: 768px;    
+    }
+    .secao-logo{
+        width: 100%;
+        height: 70px;
+    }
+    .logo-G{
+        position: absolute;
+        left: 2%;
+        top: 0;
+        width: 100px;
+        height: 60px;                            
+    }
+    .barra-busca{
+        display: none;
+        width: 1px;
+        background-color: #6A6868;
+    }
+    .container-grid{
+        width: 50%;
+    }
+    .menu{
+       width: 50%;
+    }
+    .galeria{
+        width: 500px;
+        height: 400px;
+        position: relative;
+        right: 20%;
+    }
+    .carousel-inner{
+        width: 600px;
+        position: relative;
+        right: 11%;
+    }
+    .left{
+        width: 10%;
+    }
+    right{
+        width: 10%;
+        position: relative;
+        right: 200%;
+    }
+    
+    .item{
+        width: 700px;
+        position: relative;
+        left: 250%;
+    }
+    .play{
+        width: 20px;
+    }
+    .note{
+        width: 20px; 
+    }
+    .xbox{
+        width: 20px;
+    }
+    .single-box{
+        position: absolute;
+        width: 20px;
+    }            
+}
+
