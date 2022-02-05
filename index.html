@@ -14,24 +14,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="mostrarPopup()">
+
+
 <!--INICIO SITE-->
     <section class="secao-apresentação">
-        <div class="telefone container">
-        <a href=""><img class="icon-telefone" src="img/telefone 1.png" alt="telefone" height="22" width="22"> (43) 3305-3399
+        <div class="telefone-container">
+        <a href=""><img class="icon-telefone" src="img/telefone 1.png" alt="telefone"> (43) 3305-3399
         </a>
     </div>
-        <div class="whats container">
-        <a href="https://web.whatsapp.com/"><img class="icon-whats" src="img/whats.png" alt="whats" height="24" width="24"> (43) 99665-9988
+        <div class="whats-container">
+        <a href="https://web.whatsapp.com/"><img class="icon-whats" src="img/whats.png" alt="whats"> (43) 99665-9988
         </a>
     </div>
-        <div class="bem-vindo container">
+        <div class="bem-vindo-container">
         <a href="">Sejam Bem Vindos à Games Mania!</a>
     </div>
-        <div class="redes container">
-            <a href="https://www.facebook.com/rafkastelic/"><img src="img/face.png" alt="icone face"></a>
-            <a href="https://www.instagram.com/raffkastelic/"><img src="img/instagram.png" alt="icone instagram"></a>
-            <a href=""><img src="img/twitter.png" alt="icone Twitter"></a>
+        <div class="redes-container">
+            <a href="https://www.facebook.com/rafkastelic/"><img class="face" src="img/face.png" alt="icone face"></a>
+            <a href="https://www.instagram.com/raffkastelic/"><img class="insta" src="img/instagram.png" alt="icone instagram"></a>
+            <a href=""><img class="twitter" src="img/twitter.png" alt="icone Twitter"></a>
     </div>          
     </section>
 <!-- FIM INICIO SITE-->
@@ -39,16 +41,18 @@
 <!-- INICIO LOGO E BARRA DE BUSCA -->
     <section class="secao-logo">
         <div class="logo container">
-        <a href=""><img class="logo-G" src="img/Logo 1.png" alt="imagem-logo" height="110" width="157"></a>
+        <a href=""><img class="logo-G" src="img/Logo 1.png" alt="imagem-logo"></a>
         <div class="search">
             <input type="texto" class="barra-busca" id="pesquisar" placeholder="Pesquisar" required>
             <a href="#" class="search-button">
+                <button class="botão">
                 <img src="img/lupa.svg" alt="Lupa" height="30" width="30">
             </a>
+        </button>
             </div>
         <div class="atendimento container">
             <a href="#" class="atendimento">
-               <img src="img/atendimento.png" alt="atendimento" height="30" width="30"> Atendimento
+               <img src="img/atendimento.png" alt="atendimento" height="50" width="50"> Atendimento
         </a>       
         </div> 
         <div class="login container">
@@ -69,7 +73,7 @@
         <div class="container-grid posicionamento-header">
             <a href=""><img class="sanduba" src="img/bars.svg" alt="menu sanduiche" height="20" width="30"></a> 
             <nav id="menu" class="menu">
-                <a href="">Departamento</a>
+                <a href="">Departamentos</a>
                 <a href="">Lançamentos</a>
                 <a href="">PC GAMER</a>
                 <a href="">Monitores</a>
@@ -140,12 +144,76 @@
         </div>        
     </div>           
     <hr>
+    
 <!-- FIM DA GALERIA -->  
 
-<!-- INICIO GALERIA DE VENDAS-->
+<!-- INICIO PRODUTOS-->
+  <section class="secao-noticias">
+      <div class="container">
+          <div class="bloco-noticias">
+              <h2>Destaques</h2>
+              <div class="content-news">
+                  <div class="cardnews">
+                      <img src="img/cadeira.png" alt="cadeira gamer">
+                      <h3>Cadeira Gamer EC1 ThunderX3 Suporta até 150Kg, Preto</h3>
+                      <h2>R$ 963,29</h2>
+                      <p>Em 10x no cartão de crédito</p>
+                      <button class="cadeira">
+                          <h1>COMPRAR</h1>
+                      </button>
+                  </div>
+                  <div class="cardnews">
+                    <img src="img/pc.png" alt="pc gamer">
+                    <h3>Pc Gamer Completo Intel Core i5 8GB ssd 240GB Geforce 2gb Monitor 19 - Kit Gamer</h3>
+                    <h2>R$ 2.787,97</h2>
+                    <p>Em 10x no cartão de crédito</p>
+                    <button class="pc">
+                        <h1>COMPRAR</h1>
+                    </button>
+                </div>
+                <div class="cardnews">
+                    <img src="img/fone.png" alt="fone">
+                    <h3>Headset Gamer Razer Kraken Green Multi Platform - Verde</h3>
+                    <h2>R$ 569,05</h2>
+                    <p>Em 10x no cartão de crédito</p>
+                    <button class="fone">
+                        <h1>COMPRAR</h1>
+                    </button>
+                </div>
+                <div class="cardnews">
+                    <img src="img/mouse.png" alt="mouse">
+                    <h3>Mouse para jogo Razer DeathAdder V2 preto</h3>
+                      <h2>R$ 365,00</h2>
+                      <p>Em 10x no cartão de crédito</p>
+                      <button class="mouse">
+                          <h1>COMPRAR</h1>
+                      </button>
+                </div>
+                <div class="cardnews">
+                    <img src="img/teclado.png" alt="teclado">
+                    <h3>Teclado Mecanico Gamer Razer Blackwidow Ultimate Stealth</h3>
+                      <h2>R$ 1.152,90</h2>
+                      <p>Em 10x no cartão de crédito</p>
+                      <button class="teclado">
+                          <h1>COMPRAR</h1>
+                      </button>
+                </div>
+                <div class="cardnews">
+                    <img src="img/placa.png" alt="placa de video">
+                    <h3>Placa de Vídeo Palit GeForce GTX 1660 - 6GB GDDR6 192 bits Gaming Pro Super</h3>
+                      <h2>R$ 5.681,37</h2>
+                      <p>Em 10x no cartão de crédito</p>
+                      <button class="placa">
+                          <h1>COMPRAR</h1>
+                      </button>
+                </div>                                 
+            </div>
+          </div>
+      </div>
+  </section>
+  <hr> 
 
-
-<!-- FIM GALERIA DE VENDAS-->
+<!-- FIM PRODUTOS-->
 
 
 
@@ -160,6 +228,9 @@
             }
         }
     </script>
+    <!--LINK JAVASCRIP-->
+    <script src="js/script.js"></script>
+    <!--FIM LINK JAVA SCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

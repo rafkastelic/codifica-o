@@ -26,48 +26,64 @@ body{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     margin: auto;
-    font-size: 16px;                
+    font-size: 14px;                
 }
 
-.telefone{
+.telefone-container{
     position: relative;
-    left: 0,9%;
-    height: px; 
+    left: 5%;
     background: none;
     display: flex;
     justify-content: space-between;
     align-items: center; 
 }
 
-.whats{
+.whats-container{
     position: relative;
-    right: 14%;
-    height: px;
+    right: 12%;
     background: none;
     display: flex;
     justify-content: space-between;
     align-items: center;     
 }
 
-.bem-vindo{
+.bem-vindo-container{
     position: relative;
-    height: px; 
-    right: 15%;
+    right: 16%; 
     background: none;
     display: flex;
     justify-content: space-between;
     align-items: center; 
 }
 
-.redes{
+.redes-container{
     position: relative;
+    right: 5%;
     align-items: center;
+}
+
+.face{
+    width: 30px;
+    position: relative;
+    left: 50%;    
+}
+
+.insta{
+    width: 32px;
+    position: relative;
+    left: 50%;
+}
+
+.twitter{
+    width: 35px;
+    position: relative;
+    left: 42%;
 }
 
 .secao-logo{
     background-image: url(../img/Rectangle\ 1.png);
     background-position: center;
-    height: 140px;
+    height: 137px;
     background-repeat: none;
     background-size: cover;
     margin: auto;
@@ -75,9 +91,14 @@ body{
     align-items: center;    
 }
 
+.logo-G{
+    width: 120px;
+    position: relative;
+    left: 40%;
+    justify-content: center;
+}
+
 .logo{
-    ;
-   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +107,7 @@ body{
 .search {
     position: relative;
     top: 5%;
-    left: 2%;
+    left: 7%;
     background: whitesmoke;
     height: 40px;
     padding: 3px;
@@ -94,6 +115,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.botão{
+    border: none;
+    position: relative;
+    left: -0,1%;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 .barra-busca{
@@ -121,7 +150,7 @@ body{
 .atendimento{
     position: relative;
     top: 5%;
-    left: 10%;
+    left: 5%;
     background: none;
     padding: 10px;
     display: flex;
@@ -130,12 +159,12 @@ body{
     color: whitesmoke;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 .login{
     position: relative;
     top: 5%;
-    left: 7%;
     background: none;
     padding: 10px;
     display: flex;
@@ -144,12 +173,13 @@ body{
     color: whitesmoke;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 .carrinho{
     position: relative;
     top: 5%;
-    left: 3%;
+    left: 7%;
     background: none;
     padding: 5px;
     border-radius: 10px;
@@ -170,6 +200,7 @@ header{
     background-color: #6A6868; 
     height: 45px;
 }
+
 .menu{
     width: 1200px;
     display: flex;
@@ -197,9 +228,15 @@ header{
     width: 67%;
     position: relative;
     background-color: #332E2E;
+    padding: 1px;
     display: flex;
     justify-content: space-around;
     align-items:    
+}
+
+.carousel-inner{
+    max-width: 100%;
+    margin: 5px 0;
 }
 
 .loja{
@@ -208,8 +245,8 @@ header{
 }
 
 .galeria{
-    width: 300x;
-    height: 200px;
+    max-width: 80%;
+    height: 190px;
     border-color: #6A6868;
     box-shadow: #6A6868;
     position: relative;
@@ -217,8 +254,8 @@ header{
 }
 
 .box-galeria{
-    display: flex;
-    padding: 1px;    
+    max-width: 100%; 
+        
 }
 
 .box-galeria:hover .single-box img{
@@ -226,182 +263,321 @@ header{
 }
 
 .single-box img{
-    width: 300px;
-    height: 200px;
-    border-radius: 5px;
+    max-width: 100%;
+    height: 190px;
+    margin right: 5%;
+    border-radius: 2px;
+    margin-bottom: 2px;
     box-shadow: #6A6868;
     transition: 0.5s;
-    display: flex;
+    display: 
     align-items: center;
     box-shadow: 0 0 15px #6A6868;
     display: inline-block;
 }
-       
-.secao-jogos{
-    background-color: black;
+
+.secao-noticias{
+    padding: 20px;
 }
 
-.jogos{
+.secao-noticias .container{
     display: flex;
     justify-content: space-between;
+}
+
+.bloco-noticias{
+    width: 70%;
+    height: 90%;
+    color: black;
+}
+
+.bloco-noticias h2{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloco-noticias{
+    font-size: 15px;
+}
+
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.cardnews{
+    width: 245px;
+    height: 370px;
+    background: whitesmoke;
+    color: black;
+    margin-bottom: 32px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 5%;
+}
+
+.cardnews img{
+    width: 180px;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: inline;
+    justify-content: space-around;
     align-items: center;
 }
 
-.jogos img{
-    width: 150px;
-}
-.secao-sobre{
-    background-image: url(../img/Fundo.png);
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-}
-.texto-sobre{
-    color: white;
+.cardnews h3{
+    font-size: 16px;
+    color: black;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+    text-justify: justify;
+    align-items: center;
 }
 
+.cardnews h2{
+    color: green;
+}
+
+.cardnews p{
+    font-size: 16px;
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    text-justify: justify;
+    align-items: center;
+}
+
+.cadeira{
+    width: 200px;
+    margin-top: 35px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pc{
+    width: 200px;
+    margin-top: 15px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fone{
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mouse{
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.teclado{
+    width: 200px;
+    margin-top: 115px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.placa{
+    width: 200px;
+    margin-top: 60px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1200px) {
-    .container-grid{
-        width: 90%;
-    }
-    .menu{
-        width: 460px;
-    }
-    .menu a{
-        font-size: 16px;
-    }
-    .icon-telefone{
-        width: 30px;
-        position: absolute;
-        top: 0;
-        left: -190%;
-    }
-    .icon-telefone a{
-        position: absolute;
-        right: 20%;
-    }
-    .secao-apresentação{
-        width: 200px;
-        height: 40px;
-        position: relative;
-        justify-content: center;
-        align-items: center;        
-    }
-    .secao-apresentação a{
-        font-size: 10px;
-        justify-content: center;
-    }
-    .logo{
-        width: 460px;
-    }
-    .barra-busca{
-        width: 460px;
-    }
-    .secao-banner{
-        width: 460px;
-    }
-    .secao-apresentação{
-        width: 460px;
-    }
-    
-    .galeria{
-        width: 460px;
-    }
+.container-grid{
+         width: 90%;
+}
+.menu{
+    width: 850px;
+}
+.menu a{
+    font-size: 14px;
+}
+.sanduba{
+    width: auto;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    display: flexbox;
+}
+.icon-telefone{
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 190%;
+}
+
+.secao-apresentação{
+    display: none;
+    height: 35px;
+    position: relative;
+    right: 1%;
+    justify-content: center;
+    align-items: center;        
+}
+.secao-apresentação a{
+    font-size: 10px;
+    justify-content: center;
+}
+.logo{
+    width: 100%;
+}
+.barra-busca{
+    width: 290px;
+}
+.secao-banner{
+    width: 460px;
+}
+.secao-apresentação{
+    width: 460px;
+}
+ 
+.galeria{
+    width: 100%;
+    height: 100px;
 }
 
 @media screen and (max-width: 768px) {
     h1{
         color:white;
     }
-    .barras{
-        display: inline-block;
-    }
-    .sanduba{
-        display: none;
-    }
-    .menu{
-        display: none;
-        flex-direction: column;
-        width: 10x;
-        height: 500px;
-        position: absolute;
-        top: 0;
-        left: 22%;
-        background-color: #6A6868;
-    }
-    .menu a{
-        text-align: center;
-        padding: 16px;
-    }
-    .posicionamento-header{
-        position: relative;
-    }
-    .secao-apresentação{
-        display: none;
-        width: 768px;    
-    }
-    .secao-logo{
-        width: 100%;
-        height: 70px;
-    }
-    .logo-G{
-        position: absolute;
-        left: 2%;
-        top: 0;
-        width: 100px;
-        height: 60px;                            
-    }
-    .barra-busca{
-        display: none;
-        width: 1px;
-        background-color: #6A6868;
-    }
-    .container-grid{
-        width: 50%;
-    }
-    .menu{
-       width: 50%;
-    }
-    .galeria{
-        width: 500px;
-        height: 400px;
-        position: relative;
-        right: 20%;
-    }
-    .carousel-inner{
-        width: 600px;
-        position: relative;
-        right: 11%;
-    }
-    .left{
-        width: 10%;
-    }
-    right{
-        width: 10%;
-        position: relative;
-        right: 200%;
-    }
-    
-    .item{
-        width: 700px;
-        position: relative;
-        left: 250%;
-    }
-    .play{
-        width: 20px;
-    }
-    .note{
-        width: 20px; 
-    }
-    .xbox{
-        width: 20px;
-    }
-    .single-box{
-        position: absolute;
-        width: 20px;
-    }            
+.barras{
+    display: inline-block;
 }
-
+.sanduba{
+    display: none;
+}
+.menu{
+    display: none;
+    flex-direction: column;
+    width: 10x;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    left: 22%;
+    background-color: #6A6868;
+}
+.menu a{
+    text-align: center;
+    padding: 16px;
+}
+.posicionamento-header{
+    position: relative;
+}
+.secao-apresentação{
+    display: none;
+    width: 768px;    
+}
+.secao-logo{
+    width: 100%;
+    height: 70px;
+}
+.logo-G{
+    position: absolute;
+    left: 2%;
+    top: 0;
+    width: 100px;
+    height: 60px;                            
+}
+.barra-busca{
+    display: none;
+    width: 1px;
+    background-color: #6A6868;
+}
+.container-grid{
+    width: 50%;
+}
+.menu{
+    width: 50%;
+}
+.galeria{
+    width: 500px;
+    height: 400px;
+    position: relative;
+    right: 20%;
+}
+.carousel-inner{
+    width: 600px;
+    position: relative;
+    right: 11%;
+}
+.left{
+    width: 10%;
+}
+.right{
+    width: 10%;
+    position: relative;
+    right: 200%;
+ }
+ 
+ .item{
+    width: 700px;
+    position: relative;
+    left: 250%;
+ }
+ .play{
+    width: 20px;
+ }
+ .note{
+    width: 20px; 
+ }
+ .xbox{
+    width: 20px;
+ }
+ .single-box{
+    position: absolute;
+    width: 20px;
+ }
