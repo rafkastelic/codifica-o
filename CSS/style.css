@@ -10,6 +10,10 @@ body{
     background-color: #332E2E;
 }
 
+hr{
+    color: #6A6868;
+}
+
 .secao-apresentação{
     background-image: url(../img/fundo.png);
     background-position: center;
@@ -211,7 +215,7 @@ header{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
     font-size: 15px;
 }
 
@@ -276,22 +280,22 @@ header{
     display: inline-block;
 }
 
-.secao-noticias{
+.secao-produtos{
     padding: 20px;
 }
 
-.secao-noticias .container{
+.secao-produtos .container{
     display: flex;
     justify-content: space-between;
 }
 
-.bloco-noticias{
+.bloco-produtos{
     width: 70%;
     height: 90%;
     color: black;
 }
 
-.bloco-noticias h2{
+.bloco-produtos h2{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -299,7 +303,7 @@ header{
     justify-content: space-around;
 }
 
-.bloco-noticias{
+.bloco-produtos{
     font-size: 15px;
 }
 
@@ -311,7 +315,7 @@ header{
     margin-top: 10%;
 }
 
-.cardnews{
+.produtos{
     width: 245px;
     height: 370px;
     background: whitesmoke;
@@ -321,7 +325,7 @@ header{
     border-radius: 5%;
 }
 
-.cardnews img{
+.produtos img{
     width: 180px;
     margin-top: 5%;
     margin-left: 10%;
@@ -330,7 +334,8 @@ header{
     align-items: center;
 }
 
-.cardnews h3{
+.produtos h3{
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
     font-size: 16px;
     color: black;
     display: flex;
@@ -340,11 +345,12 @@ header{
     align-items: center;
 }
 
-.cardnews h2{
+.produtos h2{
     color: green;
 }
 
-.cardnews p{
+.produtos p{
+    margin-top: 20%;
     font-size: 16px;
     color: black;
     display: flex;
@@ -354,9 +360,54 @@ header{
     align-items: center;
 }
 
+.text-cadeira h3{
+    font-size: 15px;
+    
+}
+
+.preço-cadeira h2{
+    margin-top: 30px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-cadeira p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
 .cadeira{
     width: 200px;
-    margin-top: 35px;
+    margin-top: 0px;
+    margin-left: 10%;
+    background-position: right;
+    background: #332E2E;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-pc h3{
+    font-size: 15px;
+    
+}
+
+.preço-pc h2{
+    margin-top: 12px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-pc p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.pc{
+    width: 200px;
+    margin-top: 10px;
     margin-left: 10%;
     background-position: right;
     background: #332E2E;
@@ -367,7 +418,22 @@ header{
     align-items: center;
 }
 
-.pc{
+.text-fone h3{
+    font-size: 15px;  
+}
+
+.preço-fone h2{
+    margin-top: 30px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-fone p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.fone{
     width: 200px;
     margin-top: 15px;
     margin-left: 10%;
@@ -380,21 +446,23 @@ header{
     align-items: center;
 }
 
-.fone{
-    width: 200px;
-    margin-top: 40px;
-    margin-left: 10%;
-    background-position: right;
-    background: #332E2E;
-    color: white;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.text-mouse h3{
+    font-size: 15px;  
+}
+
+.preço-mouse h2{
+    margin-top: 45px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-mouse p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
 }
 .mouse{
     width: 200px;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 10%;
     background-position: right;
     background: #332E2E;
@@ -403,10 +471,25 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.text-teclado h3{
+    font-size: 15px;  
+}
+
+.preço-teclado h2{
+    margin-top: 60px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-teclado p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
 }
 .teclado{
     width: 200px;
-    margin-top: 115px;
+    margin-top: 10px;
     margin-left: 10%;
     background-position: right;
     background: #332E2E;
@@ -415,10 +498,25 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.text-placa h3{
+    font-size: 15px;  
+}
+
+.preço-placa h2{
+    margin-top: 55px;
+    color: green;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
+
+.forma-placa p{
+    margin-top: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
 }
 .placa{
     width: 200px;
-    margin-top: 60px;
+    margin-top: 10px;
     margin-left: 10%;
     background-position: right;
     background: #332E2E;
@@ -429,12 +527,100 @@ header{
     align-items: center;
 }
 
+.secao-noticias{
+    background: #332E2E;
+    padding: 10px;
+}
+
+.secao-noticias .noticias{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloco-noticias{
+    width: 70%;
+    height: 90%;
+    color: white;    
+}
+
+.bloco-noticias h2{
+    font-size: 25px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.cardnews img{
+    border-radius: 5px;
+    border: #6A6868;
+}
+
+.cardnews h1{
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 24px;
+
+}
+
+.cardnews p{
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 15px;
+
+}
+
+.cardnews a{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+}
 
 
+footer .links{
+    width: 310px;
+    min-height: 150px;
+    padding: 5px;
+   
+}
 
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;    
+}
 
+.links{
+    color: white;
+    font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 16px;
+}
 
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    text-justify: justify;
+}
 
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy img{
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy p{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
 
 @media screen and (max-width: 1200px) {
 .container-grid{
