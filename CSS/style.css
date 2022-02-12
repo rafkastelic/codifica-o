@@ -15,6 +15,7 @@ hr{
 }
 
 .secao-apresentação{
+    width: 100%;
     background-image: url(../img/fundo.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -85,6 +86,7 @@ hr{
 }
 
 .secao-logo{
+    max-width: 100%;
     background-image: url(../img/Rectangle\ 1.png);
     background-position: center;
     height: 137px;
@@ -206,7 +208,7 @@ header{
 }
 
 .menu{
-    width: 1200px;
+    width: 1366px;
     display: flex;
     justify-content: space-between;
 }
@@ -229,7 +231,7 @@ header{
 }
 
 .secao-banner{
-    width: 67%;
+    width: 1200px;
     position: relative;
     background-color: #332E2E;
     padding: 1px;
@@ -578,7 +580,7 @@ header{
 
 
 footer .links{
-    width: 310px;
+    width: 305px;
     min-height: 150px;
     padding: 5px;
    
@@ -587,7 +589,7 @@ footer .links{
 .rodape{
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    padding: 15px;
     color: white;    
 }
 
@@ -623,65 +625,34 @@ footer .links{
 }
 
 @media screen and (max-width: 1200px) {
-.container-grid{
-         width: 90%;
-}
-.menu{
-    width: 850px;
-}
-.menu a{
-    font-size: 14px;
-}
-.sanduba{
-    width: auto;
-    position: absolute;
-    top: 25%;
-    left: 8%;
-    display: flexbox;
-}
-.icon-telefone{
-    width: 30px;
-    position: absolute;
-    top: 0;
-    right: 190%;
-}
-
-.secao-apresentação{
-    display: none;
-    height: 35px;
-    position: relative;
-    right: 1%;
-    justify-content: center;
-    align-items: center;        
-}
-.secao-apresentação a{
-    font-size: 10px;
-    justify-content: center;
-}
-.logo{
-    width: 100%;
-}
-.barra-busca{
-    width: 290px;
-}
-.secao-banner{
-    width: 460px;
-}
-.secao-apresentação{
-    width: 460px;
-}
- 
-.galeria{
-    width: 100%;
-    height: 100px;
-}
-
+    .container-grid{
+        width: 100%;
+    }
+    .menu{
+        width: 900px;
+    }
+    .menu a{
+        font-size: 14px;
+    }
+    
+    
 @media screen and (max-width: 768px) {
     h1{
         color:white;
     }
+
+.container-grid{
+    width: 100px;
+}
+
+.search{
+    width: 40%;
+}
 .barras{
     display: inline-block;
+    position: absolute;
+    top: 15%;
+    left: 120%;
 }
 .sanduba{
     display: none;
@@ -689,38 +660,25 @@ footer .links{
 .menu{
     display: none;
     flex-direction: column;
-    width: 10x;
-    height: 650px;
+    width: 700px;
+    height: 500px;
     position: absolute;
     top: 0;
-    left: 22%;
+    left: 20%;
     background-color: #6A6868;
 }
 .menu a{
     text-align: center;
     padding: 16px;
 }
+
 .posicionamento-header{
     position: relative;
 }
-.secao-apresentação{
-    display: none;
-    width: 768px;    
-}
-.secao-logo{
-    width: 100%;
-    height: 70px;
-}
-.logo-G{
-    position: absolute;
-    left: 2%;
-    top: 0;
-    width: 100px;
-    height: 60px;                            
-}
+
 .barra-busca{
     display: none;
-    width: 1px;
+    width: 0px;
     background-color: #6A6868;
 }
 .container-grid{
@@ -729,41 +687,3 @@ footer .links{
 .menu{
     width: 50%;
 }
-.galeria{
-    width: 500px;
-    height: 400px;
-    position: relative;
-    right: 20%;
-}
-.carousel-inner{
-    width: 600px;
-    position: relative;
-    right: 11%;
-}
-.left{
-    width: 10%;
-}
-.right{
-    width: 10%;
-    position: relative;
-    right: 200%;
- }
- 
- .item{
-    width: 700px;
-    position: relative;
-    left: 250%;
- }
- .play{
-    width: 20px;
- }
- .note{
-    width: 20px; 
- }
- .xbox{
-    width: 20px;
- }
- .single-box{
-    position: absolute;
-    width: 20px;
- }
