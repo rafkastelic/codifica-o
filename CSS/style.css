@@ -154,6 +154,7 @@ hr{
 }
 
 .atendimento{
+    width: 80%;
     position: relative;
     top: 5%;
     left: 5%;
@@ -168,7 +169,12 @@ hr{
     font-size: 16px;
 }
 
+.atendimento img{
+    width: 50px;
+}
+
 .login{
+    width: 15%;
     position: relative;
     top: 5%;
     background: none;
@@ -182,10 +188,15 @@ hr{
     font-size: 16px;
 }
 
+.login img{
+    width: 50px;
+}
+
 .carrinho{
+    width: 95%;
     position: relative;
     top: 5%;
-    left: 7%;
+    left: 15%;
     background: none;
     padding: 5px;
     border-radius: 10px;
@@ -625,15 +636,194 @@ footer .links{
 }
 
 @media screen and (max-width: 1200px) {
-    .container-grid{
+    .secao-apresentação{
+        width: 100%;
+        max-width: 1024px;
+        font-size: 10px;    
+    }
+
+    .secao-apresentação img{
+        width: 25px;
+        max-width: 25%;
+    }
+
+    .telefone-container{
+        width: 60%;
+        max-width: 65%;
+        font-size: 2px;
+        position: relative;
+        left: 0%;
+    }
+
+    .whats-container{
+        width: 100%;
+        font-size: 9px;
+        position: relative;
+        right: 19%;
+    }
+
+    .bem-vindo-container{
+        width: 50%;
+        right: 25%;
+    }
+
+    .bem-vindo-container a{
+        width: 100%;
+        font-size: 12px;
+        position: relative;
+        left: 10%;
+    }   
+
+    .redes-container{
+        width: 25%;
+        max-width: 35%;
+    }
+
+    .redes-container img{
+        width: 20px;
+    }
+
+    .secao-logo{
+        width: 100%;
+        height: 5%;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .search{
+        width: 500px;
+    }
+
+    .atendimento{        
+        width: 85%;
+    }
+
+    .atendimento img{
+        width: 50px;
+    }
+
+    .login{
+        width: 60%;
+    }
+
+    .login img{
+        width: 50px;
+    }
+    
+    .carrinho{
         width: 100%;
     }
+
+    .carrinho img{
+        width: 50px;
+    }
+
+    .container-grid{
+        width: 100%;
+    }    
+
     .menu{
-        width: 900px;
+        width: 90%;
     }
     .menu a{
         font-size: 14px;
     }
+
+    .container-grid img{
+        position: relative;
+        left: 100%;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .carousel-indicators{
+        width: 70%;
+    }
+
+    .galeria{
+        width: 80%;
+        height: 25%;
+        margin-top: 2%;        
+    }
+
+    .secao-produtos{
+        width: 100%;
+    }
+
+    .bloco-produtos{
+        margin-top: 3%;
+    }
+
+    .cadeira{
+        position: relative;
+        top: -2%;
+    }
+
+    .pc{
+        position: relative;
+        top: -2%;          
+    }
+
+    .fone{
+        position: relative;
+        top: -2%;
+    }
+
+    .mouse{
+        position: relative;
+        top: -2%;
+    }
+
+    .teclado{
+        position: relative;
+        top: -2%;
+    }
+
+    .placa{
+        position: relative;
+        top: -2%;
+    }
+
+    .secao-noticias{
+        width: 100%;
+    }
+
+    .secao-noticias img{
+        width: 100%;
+    }
+
+    .cardnews h1{
+        font-size: 18px;
+    }
+
+    .cardnews p{
+        text-justify: justify;
+    }
+
+    .rodape{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .links h2{
+        font-size: 18px;
+    }
+
+    .links{
+        width: 60%;
+        font-size: 12px;
+    }
+
+    .copyright{
+        width: 100%;
+        max-width: 80%;
+    }   
+}
+
     
     
 @media screen and (max-width: 768px) {
@@ -641,13 +831,63 @@ footer .links{
         color:white;
     }
 
-.container-grid{
-    width: 100px;
+    .secao-apresentação{
+        display: none;
+}
+
+.secao-logo{
+    width: 100%;
+    height: 2%;
+}
+
+.logo img{
+    width: 75px;
+    position: relative;
+    left: 5%;
 }
 
 .search{
-    width: 40%;
+    width: 50%;
 }
+
+.atendimento{        
+    width: 100%;
+    font-size: 10px;
+    position: relative;
+    left: 2%;
+    
+}
+
+.atendimento img{
+    width: 35px;
+    text-decoration: none;
+}
+
+.login{
+    width: 100%;
+    font-size: 10px;
+    position: relative;
+    right: 6%;
+}
+
+.login img{
+    width: 35px;
+}
+
+.carrinho{
+    
+    position: relative;
+    right: 30%;
+}
+
+.carrinho img{
+    width: 35px;
+}
+
+.container-grid{
+    width: 100%;
+}
+
 .barras{
     display: inline-block;
     position: absolute;
@@ -682,8 +922,8 @@ footer .links{
     background-color: #6A6868;
 }
 .container-grid{
-    width: 50%;
+    width: 90%;
 }
 .menu{
-    width: 50%;
+    width: 60%;
 }
